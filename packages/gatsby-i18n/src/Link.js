@@ -6,7 +6,7 @@ import { I18nConsumer } from './I18nContext';
 
 const Link = ({ to, lng, children, ...rest }) => {
   return (
-    <GatsbyLink to={lng ? `/${lng}${to}` : `${to}`} {...rest}>
+    <GatsbyLink to={lng ? `${to}` : `${to}`} {...rest}>
       {children}
     </GatsbyLink>
   );

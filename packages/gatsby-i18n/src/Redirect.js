@@ -18,7 +18,7 @@ class Redirect extends PureComponent {
 
     window.localStorage.setItem('@igorkoLng', detectedLng);
 
-    const newUrl = `/${detectedLng}${redirectPage}`;
+    const newUrl = `${redirectPage}`;
     navigate(newUrl, { replace: true });
   };
 

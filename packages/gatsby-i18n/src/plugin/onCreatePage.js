@@ -31,7 +31,7 @@ const onCreatePage = ({ page, actions }, pluginOptions) => {
     availableLngs.forEach(lng => {
       const localePage = {
         ...page,
-        path: `/${lng}${page.path}`,
+        path: `${page.path}`,
         context: {
           ...page.context,
           availableLngs,
